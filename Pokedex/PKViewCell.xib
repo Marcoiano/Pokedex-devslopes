@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PKViewCell" customModule="Pokedex" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="130"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="7gj-6E-6hm">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="105"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjx-cF-015">
+                        <rect key="frame" x="0.0" y="105" width="160" height="25"/>
+                        <color key="backgroundColor" red="1" green="0.1326254204" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="v9u-od-1R0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="0.70032327586206899" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Tjx-cF-015" firstAttribute="top" secondItem="7gj-6E-6hm" secondAttribute="bottom" id="3aI-hU-hAJ"/>
+                <constraint firstItem="7gj-6E-6hm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="402-CG-QD3"/>
+                <constraint firstItem="7gj-6E-6hm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7O3-ox-Gua"/>
+                <constraint firstItem="Tjx-cF-015" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JiH-ZR-gSt"/>
+                <constraint firstAttribute="trailing" secondItem="Tjx-cF-015" secondAttribute="trailing" id="pGm-dP-9ju"/>
+                <constraint firstItem="Tjx-cF-015" firstAttribute="top" secondItem="7gj-6E-6hm" secondAttribute="bottom" id="u1L-Tq-o5k"/>
+                <constraint firstAttribute="bottom" secondItem="Tjx-cF-015" secondAttribute="bottom" id="v24-EW-g2g"/>
+                <constraint firstAttribute="trailing" secondItem="7gj-6E-6hm" secondAttribute="trailing" id="yHv-Ju-zhH"/>
+            </constraints>
+            <size key="customSize" width="160" height="130"/>
+            <connections>
+                <outlet property="nameLbl" destination="Tjx-cF-015" id="Mjc-Qs-DGU"/>
+                <outlet property="thumbImg" destination="7gj-6E-6hm" id="L1x-Le-uWu"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="298"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="6" width="137" height="120"/>
+    </resources>
+</document>
